@@ -4,6 +4,8 @@ namespace Sloveniangooner\LocaleAnywhere;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
+use Illuminate\Http\Request;
+
 
 class LocaleAnywhere extends Tool
 {
