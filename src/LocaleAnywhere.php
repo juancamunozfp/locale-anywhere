@@ -55,4 +55,9 @@ class LocaleAnywhere extends Tool
   {
     // return view('locale-anywhere::navigation');
   }
+  
+  public function menu(Request $request)
+  {
+    // TODO: Implement menu() method.
+  }
 }
