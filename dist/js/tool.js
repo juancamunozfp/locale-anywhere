@@ -454,7 +454,7 @@ Nova.booting(function (Vue, router, store) {
   Vue.component('detail-locale-anywhere', __webpack_require__(/*! ./components/DetailField.vue */ "./resources/js/components/DetailField.vue"));
   Vue.component('form-locale-anywhere', __webpack_require__(/*! ./components/FormField.vue */ "./resources/js/components/FormField.vue"));
 
-  if (window.config.customDetailToolbar) {
+  if (window.config !== undefined && window.config.customDetailToolbar) {
     Vue.component('custom-detail-toolbar', __webpack_require__(/*! ./components/CustomDetailToolbar.vue */ "./resources/js/components/CustomDetailToolbar.vue"));
   }
 });

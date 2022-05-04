@@ -6,7 +6,7 @@ Nova.booting((Vue, router, store) => {
   Vue.component('detail-locale-anywhere', require('./components/DetailField.vue'));
   Vue.component('form-locale-anywhere', require('./components/FormField.vue'));
 
-  if (window.config.customDetailToolbar) {
+  if (window.config !== undefined && window.config.customDetailToolbar) {
     Vue.component('custom-detail-toolbar', require('./components/CustomDetailToolbar.vue'));
   }
 });
