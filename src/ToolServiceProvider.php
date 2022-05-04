@@ -38,6 +38,13 @@ class ToolServiceProvider extends ServiceProvider
         Route::middleware(['nova', Authorize::class])
                 ->prefix('nova-vendor/locale-anywhere')
                 ->group(__DIR__.'/../routes/api.php');
+
+        Nova::router()
+            ->group(function ($router) {
+                $router->get('locale-anywhere', function ($request) {
+                    return inertia('LocaleAnywhere');
+                });
+            });
     }
 
     /**
