@@ -448,11 +448,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Nova.booting(function (Vue, router, store) {
-  router.addRoutes([{
-    name: 'locale-anywhere',
-    path: '/locale-anywhere',
-    component: __webpack_require__(/*! ./components/Tool.vue */ "./resources/js/components/Tool.vue")
-  }]);
+  Nova.inertia('LocaleAnywhere', (__webpack_require__(/*! ./components/Tool.vue */ "./resources/js/components/Tool.vue")["default"]));
   Vue.component('locale-anywhere-dropdown', __webpack_require__(/*! ./components/Dropdown.vue */ "./resources/js/components/Dropdown.vue"));
   Vue.component('index-locale-anywhere', __webpack_require__(/*! ./components/IndexField.vue */ "./resources/js/components/IndexField.vue"));
   Vue.component('detail-locale-anywhere', __webpack_require__(/*! ./components/DetailField.vue */ "./resources/js/components/DetailField.vue"));
