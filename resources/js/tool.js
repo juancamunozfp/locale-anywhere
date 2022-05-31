@@ -1,5 +1,5 @@
 Nova.booting((Vue, router, store) => {
-  Vue.component('LocaleAnywhere', require('./components/Tool').default)
+  Vue.component('locale-anywhere', require('./components/Tool').default)
 
   Vue.component('locale-anywhere-dropdown', require('./components/Dropdown').default);
   Vue.component('index-locale-anywhere', require('./components/IndexField').default);
