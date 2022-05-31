@@ -66,7 +66,7 @@
 	</default-field>
 </template>
 <script>
-import { FormField, HandlesValidationErrors } from "laravel-nova";
+import { FormField, HandlesValidationErrors } from "../../../vendor/laravel/nova/resources/js/mixins/packages";
 
 export default {
 	mixins: [FormField, HandlesValidationErrors],
