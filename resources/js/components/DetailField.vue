@@ -1,8 +1,10 @@
 <template>
 	<div>
-		<panel-item :field="field">
-			<div slot="value">{{ currentLocaleName }} ({{ field.locale }})</div>
-		</panel-item>
+		<PanelItem :field="field">
+      <template #value>
+			  <div slot="value">{{ currentLocaleName }} ({{ field.locale }})</div>
+      </template>
+		</PanelItem>
 		<div class="flex border-b border-40">
 			<div class="w-1/4 py-4">
 				<h4 class="font-normal text-80">Is Translated?</h4>

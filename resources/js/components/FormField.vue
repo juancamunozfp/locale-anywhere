@@ -1,6 +1,6 @@
 <template>
-	<default-field :field="field">
-		<template slot="field">
+	<DefaultField :field="field">
+    <template #field>
 			<div
 				class="border-t-4 rounded-b px-4 py-3 mb-2 shadow-md"
 				:class="{
@@ -63,10 +63,10 @@
 				/>
 			</div>
 		</template>
-	</default-field>
+	</DefaultField>
 </template>
 <script>
-import { FormField, HandlesValidationErrors } from "../../../vendor/laravel/nova/resources/js/mixins/packages";
+import { FormField, HandlesValidationErrors } from 'laravel-nova';
 
 export default {
 	mixins: [FormField, HandlesValidationErrors],

@@ -1,6 +1,6 @@
 <template>
-  <dropdown class="ml-5 h-9 flex items-center dropdown-right">
-    <dropdown-trigger
+  <DropDown class="ml-5 h-9 flex items-center dropdown-right">
+    <DropdownTrigger
       slot-scope="{ toggle }"
       :handle-click="toggle"
       class="h-9 flex items-center"
@@ -20,9 +20,9 @@
       </div>
 
       {{ currentLocaleName }} ({{ currentLocale }})
-    </dropdown-trigger>
+    </DropdownTrigger>
 
-    <dropdown-menu slot="menu" width="200" direction="rtl">
+    <DropdownMenu slot="menu" width="200" direction="rtl">
       <ul class="list-reset">
         <li v-for="(language, locale) in locales" :key="locale" :data="locale">
           <a
@@ -32,8 +32,8 @@
           >
         </li>
       </ul>
-    </dropdown-menu>
-  </dropdown>
+    </DropdownMenu>
+  </DropDown>
 </template>
 <script>
 export default {
