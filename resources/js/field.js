@@ -1,4 +1,4 @@
-Nova.booting((Vue, router, store) => {
+Nova.booting((Vue) => {
   Vue.component('locale-anywhere', require('./components/Tool').default)
 
   Vue.component('locale-anywhere-dropdown', require('./components/Dropdown').default);
