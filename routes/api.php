@@ -15,5 +15,5 @@ use Sloveniangooner\LocaleAnywhere\Http\Controllers\LanguagesController;
 */
 
 Route::get("/languages", LanguagesController::class."@languages");
-Route::post("/cache-locale", LanguagesController::class."@cacheLocale");
+Route::get("/cache-locale/{locale}", LanguagesController::class."@cacheLocale");
 Route::delete("/delete", LanguagesController::class."@delete");

@@ -20,11 +20,11 @@ class LanguagesController extends Controller
         return LocaleAnywhere::getLocales();
     }
 
-    public function cacheLocale(Request $request)
+    public function cacheLocale(string $locale)
     {
         $prefix = optional(auth()->user())->id;
-        cache()->forever($prefix.".locale", $request->input("locale"));
-        return cache()->get($prefix.".locale");
+        cache()->forever($prefix.".locale", $locale);
+        return redirect()->back();
     }
 
     public function delete(Request $request)
